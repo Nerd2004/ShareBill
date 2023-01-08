@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="sharebill.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Acme&family=Andika:ital,wght@0,400;0,700;1,400&family=Ubuntu:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="board">
+        <div id="total">
+        <p><center>Total Bill</center></p>
+        <p><center>Rs.<input onkeyup="CalculateBill()" type="text" id="amount" placeholder="0.00"></center></p>
+        <p><center>Tip Percentage</center></p>
+        <p><center>%<input onkeyup="CalculateBill()" type="text" id="tip" placeholder="0"></center></p>
+        <p><center>No. of People</center></p><br>
+        <div class="buttons">
+            <button onclick="increasePeople()" id="inc" value="add">+</button>
+        <div id="people">1</div>
+        <button onclick="decreasePeople()" id="dec" value="minus">-</button>
+        </div>
+        
+        </div>
+        <p><center><b>Total Amount per Person</b></center></p>
+        <p><center>Rs <span id="final">0.00</span></center></p>
+        
+    </div>
+
+    <script src="share.js"></script>
+</body>
+</html>
